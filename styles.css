@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -43,8 +44,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  background-color: #e9e9e9; }
+  height: 300px;
+  background-image: url("./images/쐬여니.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .banner h1 {
     font-size: 36px;
     color: #333; }
@@ -154,8 +158,8 @@ header {
     position: relative; }
 
 .modal-content-w .modal-image {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
   object-fit: cover;
   margin-bottom: 10px; }
