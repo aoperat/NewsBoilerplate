@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "imgUrl": "/images/foods/그릴드치킨샐러드.jpg",
+        "imgUrl": "/images/foods/gcs.jpg",
         "title": "그릴드 치킨 샐러드",
         "content": "그릴드 치킨이 들어간 건강하고 맛있는 샐러드입니다.",
         "tag": [
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "imgUrl": "/images/foods/아보카도토스트.jpg",
+        "imgUrl": "/images/foods/at.jpg",
         "title": "아보카도 토스트",
         "content": "아보카도와 토스트로 만든 간단하면서도 맛있는 아침 식사입니다.",
         "tag": [
