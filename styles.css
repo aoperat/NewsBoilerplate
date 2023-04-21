@@ -219,3 +219,61 @@ footer {
 @media screen and (min-width: 769px) {
   .list-section .list-container:nth-child(2) {
     width: calc(100% * 3 / 12); } }
+
+/* 기존 스타일에 추가 */
+.hamburger-menu {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100; }
+  .hamburger-menu .hamburger-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: all 0.3s; }
+    .hamburger-menu .hamburger-line:nth-child(1) {
+      top: 0; }
+    .hamburger-menu .hamburger-line:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%); }
+    .hamburger-menu .hamburger-line:nth-child(3) {
+      bottom: 0; }
+
+nav.nav-menu {
+  transition: transform 0.3s;
+  z-index: 90; }
+
+@media screen and (max-width: 768px) {
+  nav.nav-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px; }
+    nav.nav-menu a {
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+  .hamburger-menu {
+    display: block; }
+  .nav-menu.open {
+    transform: translateX(-80%); }
+  .hamburger-menu.open .hamburger-line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg); }
+  .hamburger-menu.open .hamburger-line:nth-child(2) {
+    opacity: 0; }
+  .hamburger-menu.open .hamburger-line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg); } }

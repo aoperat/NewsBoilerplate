@@ -50,3 +50,13 @@ fetch('./blog.json')
   list2.innerHTML = list2Items;
 })
 .catch((error) => console.error(error));
+
+
+/* 기존 코드 유지하면서 추가 */
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+  hamburgerMenu.classList.toggle('open');
+});
