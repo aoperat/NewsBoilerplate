@@ -90,7 +90,6 @@ header {
     border-radius: 5px;
 
     &:nth-child(2) {
-      width: calc(100% * 3 / 12); // 추가된 부분
       background-color: #ffffff; // 변경된 부분
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // 변경된 부분
 
@@ -313,5 +312,19 @@ footer {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+/* 기존 스타일을 유지하면서 추가 */
+@media screen and (max-width: 768px) {
+  .list-section .list-container {
+    width: 100%;
+  }
+}
+
+/* 기존 스타일을 유지하면서 추가 */
+@media screen and (min-width: 769px) {
+  .list-section .list-container:nth-child(2) {
+    width: calc(100% * 3 / 12);
   }
 }
